@@ -179,6 +179,7 @@ double calculateWidth(double widthA, double widthB, double widthC)
     return {};
 }
 
+
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
