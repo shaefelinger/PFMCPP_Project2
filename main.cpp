@@ -96,11 +96,11 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- int getNumberOfAllStudents(int numberOfStudentsInCourseA, int numberOfStudentsInCourseB)
- {
+int getNumberOfAllStudents(int numberOfStudentsInCourseA, int numberOfStudentsInCourseB)
+{
     ignoreUnused(numberOfStudentsInCourseA, numberOfStudentsInCourseB);
     return {};
- }
+}
 
 /*
  2)
@@ -113,20 +113,20 @@ void startAudioEngine (int sampleRate, int numberOfChannels = 2)
 /*
  3)
  */
- float calculateArea(float a, float b)
- {
+float calculateArea(float a, float b)
+{
     ignoreUnused(a, b); 
     return {};
- }
+}
 
 /*
  4)
  */
- int addIntegers(int x, int y, int z = 22)
- {
+int addIntegers(int x, int y, int z = 22)
+{
     ignoreUnused(x, y, z);
     return {};
- }
+}
 
 /*
  5)
