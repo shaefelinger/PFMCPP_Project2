@@ -199,27 +199,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto students = getNumberOfAllStudents(23, 12);
     //2)
-    
+    startAudioEngine (44100);
     //3)
-    
+    float area = calculateArea(3.232f, 4.3f);
     //4)
-    
+    int sum = addIntegers(32, 4343, 33);
     //5)
-    
+    doNothing(0);
     //6)
-    
+    bool testIsPassed = studentPassedTest(22);
     //7)
-    
+    char letter = randomLetter('A', 'D');
     //8)
-    
+    addGain(6.1f);
     //9)
-    
+    invertPolarity();
     //10)
+    double overallWidth = calculateWidth(32.3232, 4324.3, 65.6565);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, students, area, sum, testIsPassed, letter, overallWidth);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
