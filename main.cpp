@@ -16,19 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  - integer - int
- - Floating Pont - float
+ - Floating Point - float
  - Double Floating Point - double
  - Boolean - bool
  - Character - char
  - Valueless - void
  
- 
- 
- 
- 
- 
- 
- 
+
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -65,9 +59,29 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
+    int a = 2;
+    int b = 10;
+    int x = -230232;
+
+    float pi = 3.14f;
+    float weight = 69.23f;
+    float height = 3232.23f;
+
+    double y = 32.9349409834;
+    double z = 123.2;
+    double preciseNumber = -12342.343;
+
+    bool studentUnderstoodTask = false;
+    bool playAudio = true;
+    bool isLoggedIn = false;
+
+    char firstLetter = 'A';
+    char lastLetter = 'Z';
+    char randomCharacter = '$';
+
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused( number, a , b, x, pi, weight, height, y, z, preciseNumber, studentUnderstoodTask, playAudio, isLoggedIn, firstLetter, lastLetter, randomCharacter  ) ; //passing each variable declared to the ignoreUnused() function
 }
 
 /*
