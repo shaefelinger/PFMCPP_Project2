@@ -15,7 +15,12 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
+ - integer - int
+ - Floating Pont - float
+ - Double Floating Point - double
+ - Boolean - bool
+ - Character - char
+ - Valueless - void
  
  
  
