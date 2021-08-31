@@ -98,42 +98,86 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+ int getNumberOfAllStudents(int numberOfStudentsInCourseA, int numberOfStudentsInCourseB)
+ {
+     ignoreUnused(numberOfStudentsInCourseA, numberOfStudentsInCourseB);
+     return {};
+ }
 
 /*
  2)
  */
+void startAudioEngine (int sampleRate, int numberOfChannels = 2)
+{
+    ignoreUnused(sampleRate, numberOfChannels);
+}
 
 /*
  3)
  */
+ float calculateArea(float a, float b)
+ {
+     ignoreUnused(a, b); 
+     return {};
+ }
 
 /*
  4)
  */
+ int addIntegers(int x, int y, int z = 22)
+ {
+     ignoreUnused(x, y, z);
+     return {};
+ }
 
 /*
  5)
  */
-
+void doNothing(int unusedParameter)
+{
+    ignoreUnused(unusedParameter);
+}
 /*
  6)
  */
+bool studentPassedTest(int correctAnswers, int numberOfQuestions = 32)
+{
+    ignoreUnused(correctAnswers, numberOfQuestions);
+    return {};
+}
 
 /*
  7)
  */
+char randomLetter(char firstLetter, char lastLetter)
+{
+    ignoreUnused(firstLetter, lastLetter);
+    return {};
+}
 
 /*
  8)
  */
+void addGain(float decibelsToAdd = 3.3f)
+{
+    ignoreUnused(decibelsToAdd);
+}
 
 /*
  9)
  */
-
+void invertPolarity(int channel = 1)
+{
+    ignoreUnused(channel);
+}
 /*
  10)
  */
+double calculateWidth(double widthA, double widthB, double widthC)
+{
+    ignoreUnused(widthA, widthB, widthC);
+    return {};
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
