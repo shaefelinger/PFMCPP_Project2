@@ -15,15 +15,14 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
+ - integer - int
+ - Floating Point - float
+ - Double Floating Point - double
+ - Boolean - bool
+ - Character - char
+ - Valueless - void
  
- 
- 
- 
- 
- 
- 
- 
- 
+
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -60,9 +59,27 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
+    int a = 2;
+    int b = 10;
+    int x = -230232;
 
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    float pi = 3.14f;
+    float weight = 69.23f;
+    float height = 3232.23f;
+
+    double y = 32.9349409834;
+    double z = 123.2;
+    double preciseNumber = -12342.343;
+
+    bool studentUnderstoodTask = false;
+    bool playAudio = true;
+    bool isLoggedIn = false;
+
+    char firstLetter = 'A';
+    char lastLetter = 'Z';
+    char randomCharacter = '$';
+
+    ignoreUnused( number, a , b, x, pi, weight, height, y, z, preciseNumber, studentUnderstoodTask, playAudio, isLoggedIn, firstLetter, lastLetter, randomCharacter  ) ; //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -79,42 +96,87 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+int getNumberOfAllStudents(int numberOfStudentsInCourseA, int numberOfStudentsInCourseB)
+{
+    ignoreUnused(numberOfStudentsInCourseA, numberOfStudentsInCourseB);
+    return {};
+}
 
 /*
  2)
  */
+void startAudioEngine (int sampleRate, int numberOfChannels = 2)
+{
+    ignoreUnused(sampleRate, numberOfChannels);
+}
 
 /*
  3)
  */
+float calculateArea(float a, float b)
+{
+    ignoreUnused(a, b); 
+    return {};
+}
 
 /*
  4)
  */
+int addIntegers(int x, int y, int z = 22)
+{
+    ignoreUnused(x, y, z);
+    return {};
+}
 
 /*
  5)
  */
-
+void doNothing(int unusedParameter)
+{
+    ignoreUnused(unusedParameter);
+}
 /*
  6)
  */
+bool studentPassedTest(int correctAnswers, int numberOfQuestions = 32)
+{
+    ignoreUnused(correctAnswers, numberOfQuestions);
+    return {};
+}
 
 /*
  7)
  */
+char randomLetter(char firstLetter, char lastLetter)
+{
+    ignoreUnused(firstLetter, lastLetter);
+    return {};
+}
 
 /*
  8)
  */
+void addGain(float decibelsToAdd = 3.3f)
+{
+    ignoreUnused(decibelsToAdd);
+}
 
 /*
  9)
  */
-
+void invertPolarity(int channel = 1)
+{
+    ignoreUnused(channel);
+}
 /*
  10)
  */
+double calculateWidth(double widthA, double widthB, double widthC)
+{
+    ignoreUnused(widthA, widthB, widthC);
+    return {};
+}
+
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -136,27 +198,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto students = getNumberOfAllStudents(23, 12);
     //2)
-    
+    startAudioEngine (44100);
     //3)
-    
+    float area = calculateArea(3.232f, 4.3f);
     //4)
-    
+    int sum = addIntegers(32, 4343, 33);
     //5)
-    
+    doNothing(0);
     //6)
-    
+    bool testIsPassed = studentPassedTest(22);
     //7)
-    
+    char letter = randomLetter('A', 'D');
     //8)
-    
+    addGain(6.1f);
     //9)
-    
+    invertPolarity();
     //10)
+    double overallWidth = calculateWidth(32.3232, 4324.3, 65.6565);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, students, area, sum, testIsPassed, letter, overallWidth);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
