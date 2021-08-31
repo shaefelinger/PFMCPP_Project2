@@ -79,8 +79,6 @@ void variableDeclarations()
     char lastLetter = 'Z';
     char randomCharacter = '$';
 
-
-    
     ignoreUnused( number, a , b, x, pi, weight, height, y, z, preciseNumber, studentUnderstoodTask, playAudio, isLoggedIn, firstLetter, lastLetter, randomCharacter  ) ; //passing each variable declared to the ignoreUnused() function
 }
 
@@ -100,8 +98,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  int getNumberOfAllStudents(int numberOfStudentsInCourseA, int numberOfStudentsInCourseB)
  {
-     ignoreUnused(numberOfStudentsInCourseA, numberOfStudentsInCourseB);
-     return {};
+    ignoreUnused(numberOfStudentsInCourseA, numberOfStudentsInCourseB);
+    return {};
  }
 
 /*
@@ -117,8 +115,8 @@ void startAudioEngine (int sampleRate, int numberOfChannels = 2)
  */
  float calculateArea(float a, float b)
  {
-     ignoreUnused(a, b); 
-     return {};
+    ignoreUnused(a, b); 
+    return {};
  }
 
 /*
@@ -126,8 +124,8 @@ void startAudioEngine (int sampleRate, int numberOfChannels = 2)
  */
  int addIntegers(int x, int y, int z = 22)
  {
-     ignoreUnused(x, y, z);
-     return {};
+    ignoreUnused(x, y, z);
+    return {};
  }
 
 /*
